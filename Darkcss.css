@@ -1,0 +1,782 @@
+/* Estilos generales para el HTML y el cuerpo del documento */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: white;
+  }
+  
+  /* Estilos específicos para el cuerpo del documento */
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  
+  
+  /* Estilos para la cabecera */
+  header {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    position: sticky;
+    top: 0;
+    background-color: #56494C;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .btn-container {
+  
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+  .btn-container i {
+  
+    display: inline-block;
+    position: relative;
+    top: -9px;
+  }
+  
+  label {
+    font-size: 13px;
+    color: #424242;
+    font-weight: 500;
+  }
+  
+  .btn-color-mode-switch {
+  
+    display: inline-block;
+    margin: 0px;
+    position: relative;
+  }
+  
+  .btn-color-mode-switch > label.btn-color-mode-switch-inner {
+    margin: 0px;
+    width: 140px;
+    height: 30px;
+    background: #E0E0E0;
+    border-radius: 26px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease;
+      /*box-shadow: 0px 0px 8px 0px rgba(17, 17, 17, 0.34) inset;*/
+    display: block;
+  }
+  
+  .btn-color-mode-switch > label.btn-color-mode-switch-inner:before {
+    content: attr(data-on);
+    position: absolute;
+    font-size: 12px;
+    font-weight: 500;
+    top: 7px;
+    right: 20px;
+  }
+  
+  .btn-color-mode-switch > label.btn-color-mode-switch-inner:after {
+    content: attr(data-off);
+    width: 70px;
+    height: 16px;
+    background: #fff;
+    border-radius: 26px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    text-align: center;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 6px -2px #111;
+    padding: 5px 0px;
+  }
+  
+  .btn-color-mode-switch > .alert {
+    display: none;
+    background: #FF9800;
+    border: none;
+    color: #fff;
+  }
+  
+  .btn-color-mode-switch input[type="checkbox"] {
+    cursor: pointer;
+    width: 50px;
+    height: 25px;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    margin: 0px;
+  }
+  
+  .btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner {
+    background: #151515;
+    color: #fff;
+  }
+  
+  .btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:after {
+    content: attr(data-on);
+    left: 68px;
+    background: #3c3c3c;
+  }
+  
+  .btn-color-mode-switch input[type="checkbox"]:checked + label.btn-color-mode-switch-inner:before {
+    content: attr(data-off);
+    right: auto;
+    left: 20px;
+  }
+  
+  .btn-color-mode-switch input[type="checkbox"]:checked ~ .alert {
+    display: block;
+  }
+  
+  .dark-preview {
+    background: #0d0d0d;
+  }
+  
+  .white-preview {
+    background: #fff;
+  }
+  /* Estilos para la sección del logo */
+  .logo-section img {
+    margin-left: 20px;
+    width: 50px;
+    border-radius: 50%;
+  }
+  
+  /* Estilos para la sección del logo (contenedor) */
+  .logo-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Estilos para el nombre */
+  .nombre {
+    margin-left: 20px;
+    color: white;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Estilos para la lista de navegación */
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 60px;
+  }
+  
+  /* Estilos para cada elemento de la lista de navegación */
+  nav ul li {
+    margin-right: 40px;
+    margin-left: 30px;
+  }
+  
+  /* Estilos para los enlaces de la lista de navegación */
+  nav ul li a {
+    font-family: "Lilita One", sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* Estilos para la sección HOME */
+  .HOME {
+    background-image: url(Imagenes/FondoNegro.jpg); /* Cambia esta URL a la imagen que quieras usar para el tema oscuro */
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Estilos para el título de la sección HOME */
+  .HOME h1 {
+    padding: 0;
+    margin: 10px;
+    padding: 0;
+    color: white;
+  }
+  
+  /* Estilos para la sección HOME */
+  .HOME-section {
+    color: white;
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Divide en dos partes iguales */
+    gap: 150px; /* Espacio entre las columnas */
+    color: white;
+    padding-left: 60px;
+  }
+  
+  /* Estilos para el título de la sección HOME */
+  .HOME-section h1 {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 50px;
+    padding-bottom: 40px;
+  }
+  
+  /* Estilos para la sección HOME (texto) */
+  .HOME-text {
+    grid-column: 1;
+  }
+  
+  /* Estilos para la sección de proyectos en la página de inicio */
+  .homeprojects {
+    margin-left: 80px;
+  }
+  
+  /* Estilos para la sección HOME (texto 2) */
+  .HOME-text2 {
+    grid-column: 2;
+  }
+  
+  /* Estilos para el texto en la sección HOME */
+  .HOME p {
+    font-size: 20px;
+  }
+  
+  /* Estilos para la sección "Acerca de mí" */
+  .aboutme-section {
+    background-color: #000000;
+    padding: 20px;
+  }
+  
+  /* Estilos para las tarjetas de clientes */
+  .card-client {
+    margin-left: 100px;
+    margin-top: 60px;
+    background: #56494C;
+    width: 13rem;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 4px solid #ffffff;
+    box-shadow: 0 6px 10px rgba(207, 212, 222, 1);
+    border-radius: 10px;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    transition: all 0.3s ease;
+  }
+  
+  /* Efecto hover para las tarjetas de clientes */
+  .card-client:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Estilos para la imagen del usuario */
+  .user-picture {
+    overflow: hidden;
+    width: 5rem;
+    height: 5rem;
+    border: 4px solid #ffffff;
+    border-radius: 999px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    margin: auto;
+  }
+  
+  /* Estilos para la imagen dentro de la imagen del usuario */
+  .user-picture img {
+    height: 90px;
+    width: 80px;
+  }
+  
+  /* Estilos para el icono de las redes sociales */
+  .user-picture svg {
+    width: 2.5rem;
+    fill: currentColor;
+  }
+  
+  /* Estilos para el nombre del cliente */
+  .name-client {
+    margin: 0;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  /* Estilos para el texto secundario del nombre del cliente */
+  .name-client span {
+    display: block;
+    font-weight: 200;
+    font-size: 16px;
+  }
+  
+  /* Estilos para la línea divisoria de las redes sociales */
+  .social-media:before {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 2px;
+    margin: 20px 0;
+    background: #ffffff;
+  }
+  
+  /* Estilos para los enlaces de redes sociales */
+  .social-media a {
+    position: relative;
+    margin-right: 15px;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Estilos para el último enlace de redes sociales */
+  .social-media a:last-child {
+    margin-right: 0;
+  }
+  
+  /* Estilos para los iconos de redes sociales */
+  .social-media a svg {
+    width: 1.1rem;
+    fill: currentColor;
+  }
+  
+  /* Estilos para la información emergente de las redes sociales */
+  .tooltip-social {
+    background: #262626;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    padding: 0.5rem 0.4rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-40%, -90%);
+    transition: all 0.2s ease;
+    z-index: 1;
+  }
+  
+  /* Estilos para la punta de flecha de la información emergente de las redes sociales */
+  .tooltip-social:after {
+    content: " ";
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    border: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: transparent;
+    transform: translate(-50%, 100%);
+  }
+  
+  /* Estilos para la información emergente de las redes sociales en hover */
+  .social-media a:hover .tooltip-social {
+    opacity: 1;
+    transform: translate(-50%, -130%);
+  }
+  
+  /* Estilos para el botón de currículum */
+  button.botoncurriculum {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* Efecto hover para el botón de currículum */
+  button.botoncurriculum:hover {
+    background-color: #23c483;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  /* Efecto activo para el botón de currículum */
+  button.botoncurriculum:active {
+    transform: translateY(-1px);
+  }
+  
+  
+    /*Aboutme Section*/
+    
+  .aboutme-section {
+  background: rgb(50,50,50);
+  background: linear-gradient(180deg, rgba(50,50,50,1) 0%, rgba(100,100,100,1) 100%);
+  padding: 50px 0;
+  text-align: center;
+}
+  
+  .aboutme-section h2 {
+      padding-top: 40px ;
+      margin-bottom: 100px; /* Espacio entre el título y el contenido */
+      font-family: "Russo One", sans-serif;
+      font-size: 40px;
+      font-weight: 100;
+      padding-bottom: 25px;
+    
+  }
+  
+  .container {
+      max-width: 1200px; /* Ancho máximo del contenido */
+      margin: 0 auto; /* Centra el contenido horizontalmente */
+      padding: 0 20px; /* Espacio interior */
+      padding-bottom: 60px;
+  }
+  
+  .about-me {
+      display: flex; /*flexbox para distribuir los elementos */
+      justify-content: space-between; /* Espacio entre los elementos */
+      margin-bottom: 120px;
+      font-size: 20px;
+     
+  }
+  
+  .about-me-info,
+  .skills {
+      flex:1 ; /* Los dos elementos ocupan el mismo espacio */
+  }
+  div .skills{
+      margin-left: 100px;
+      margin-top: 15px;
+  }
+  div .about-me-info{
+      padding-right: 100px;
+  }
+  .skills {
+      margin: 0 auto;
+      width: 200px;
+      border-radius:5px ;
+      padding-left: 100px;
+      
+      padding: 10px;
+      box-shadow: 2px 2px 5px #56494C;
+    }
+    
+   
+    .skills ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .skills li {
+      background-color: #ddd;
+      color: #56494C;
+      padding: 5px;
+      border-radius: 5px;
+      font-size: 18px; /* Tamaño del texto */
+      margin-bottom: 10px; /* Espacio entre elementos de la lista */
+    }
+    .about-me-info h3,
+    .skills h3 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #333; /* Color del título */
+       
+    }
+  
+  .about-me-info p {
+      font-size: 16px; /* Tamaño del texto */
+      line-height: 1.6; /* Altura de línea */
+      text-align: left; /* Alineación del texto */
+  }
+  
+    /* Seccion projects */
+    .projects-section {
+      background: rgb(50,50,50);
+      background: linear-gradient(180deg, rgba(100,100,100,1) 0%, rgba(50,50,50,1) 100%);
+      padding: 50px 0;
+      text-align: center;
+    }
+    
+    
+    .projects-section h2 {
+      
+      padding-top: 15px ;
+      margin-bottom: 100px; /* Espacio entre el título y el contenido */
+      font-family: "Russo One", sans-serif;
+      font-size: 40px;
+      font-weight: 100;
+      padding-bottom: 25px;
+      color: #fff; /* Color del título */
+      border-top: 2px solid white;
+    }
+    
+    .projects {
+      display: flex;
+      justify-content: center; /* Centra los elementos horizontalmente */
+      gap: 100px; /* Espacio entre las tarjetas */
+      flex-wrap: wrap; /* Envuelve las tarjetas cuando no caben en una fila */
+      margin-bottom: 180px;
+    }
+    
+    
+    .project-column {
+      flex: 1;
+      max-width: 350px; /* Ancho máximo de las columnas */
+      
+    }
+    
+    .project-card {
+      background-color: #56494C;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px; /* Ajusta el espacio entre las tarjetas */
+      box-shadow: 4px 7px 11px rgba(207, 212, 222, 1);
+    }
+    
+    .project-card img {
+      
+     height: 120px;
+      max-height: 120px; /* Altura máxima de la imagen */
+    }
+    
+    
+    
+    .project-card p {
+      font-size: 17px;
+      line-height: 1.6;
+      color: #fff; /* Color del texto */
+      text-align: center; /* Centra el texto dentro de la tarjeta */
+      
+    }
+    .contact-section {
+      background: rgb(50,50,50);
+      background: linear-gradient(180deg, rgba(100,100,100,1) 0%, rgba(50,50,50,1) 100%);
+      padding: 50px 0;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    
+    .form {
+      width: 300px;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
+    }
+    
+    .form .title {
+      color: royalblue;
+      font-size: 30px;
+      font-weight: 600;
+      letter-spacing: -1px;
+      line-height: 30px;
+      margin-bottom: 20px; /* Espaciado inferior para separar el título del resto del formulario */
+    }
+    
+    .form input,
+    .form textarea {
+      outline: 0;
+      border: 1px solid rgb(219, 213, 213);
+      padding: 8px 14px;
+      border-radius: 8px;
+      width: 250px;
+      margin-bottom: 15px; /* Espaciado inferior entre los campos de entrada */
+    }
+    
+    .form textarea {
+      height: 100px;
+      resize: none;
+    }
+    
+    .form button {
+      padding: 8px;
+      outline: 0;
+      border: 0;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 500;
+      background-color: royalblue;
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease; /* Añade una transición suave al color de fondo */
+    }
+    
+    .form button:hover {
+      background-color: #4169e1; /* Cambia el color de fondo al pasar el cursor sobre el botón */
+    }
+    .footer {
+      background-color: rgba(159, 164, 169, 1);
+      padding: 20px 0;
+      text-align: center;
+  }
+  
+  .footer-content {
+      display: flex;
+      justify-content: center;
+  }
+  
+  .footer-icon {
+      width: 40px;
+      height: 40px;
+      margin: 0 10px;
+      fill: #fff; /* Color del icono */
+      transition: fill 0.3s ease; /* Transición de color al pasar el cursor */
+  }
+  
+  .footer-icon:hover {
+      fill: #4169e1; /* Cambia el color del icono al pasar el cursor */
+  }
+  
+  .footer-link {
+      text-decoration: none;
+  }
+   
+  @media only screen and (max-width: 428px) {
+      /* Regla para evitar el desbordamiento horizontal */
+      html, body {
+          overflow-x: hidden;
+      }
+      header {
+        font-family: "Lilita One", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+        position: sticky;
+        top: 0;
+        background-color: #56494C;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+      header nav ul li:first-child {
+        display: none;
+    }
+  
+      .HOME-section {
+          grid-template-columns: 1fr; /* Cambia a una sola columna */
+          gap: 20px; /* Reduce el espacio entre elementos */
+          padding: 20px; /* Añade espaciado alrededor del contenido */
+      }
+  
+      .HOME-text,
+      .HOME-text2 {
+          padding: 0; /* Elimina el relleno horizontal */
+      }
+  
+      .HOME h1 {
+          font-size: 30px; /* Reducción del tamaño del título */
+          padding: 20px 0; /* Añade espacio alrededor del título */
+      }
+  
+      .HOME-text2 button {
+          width: 100%; /* Los botones ocupan todo el ancho disponible */
+          margin-bottom: 10px; /* Agrega un margen inferior entre botones */
+          
+      }
+     
+  
+    .logo-section img {
+        width: 40px; /* Reducir el tamaño del logo */
+    }
+  
+   
+  
+    nav ul {
+        margin-right: 20px; /* Reducir el margen derecho */
+    }
+  
+    nav ul li {
+        margin-right: 10px; /* Reducir el margen derecho de los elementos de la lista */
+        margin-left: 10px; /* Reducir el margen izquierdo de los elementos de la lista */
+    }
+  
+    .HOME-section {
+        grid-template-columns: 1fr; /* Cambiar a una sola columna en dispositivos pequeños */
+        gap: 0px; /* Reducir el espacio entre las secciones */
+        padding-left: 20px; /* Reducir el padding izquierdo */
+        
+    }
+  
+    .HOME-section h1 {
+        font-size: 30px; /* Reducir el tamaño de fuente del título */
+        padding-top: 20px; /* Reducir el padding superior */
+        padding-bottom: 20px; /* Reducir el padding inferior */
+    }
+    .HOME-text p{
+      font-size: 15px;
+    }
+    .homeprojects {
+        margin-left: 40px; /* Reducir el margen izquierdo */
+    }
+  
+    .card-client {
+        margin-left: 20px; /* Reducir el margen izquierdo */
+        margin-top: 40px; /* Reducir el margen superior */
+    }
+  
+    .user-picture {
+        width: 4rem; /* Reducir el tamaño de la imagen del usuario */
+        height: 4rem; /* Reducir el tamaño de la imagen del usuario */
+    }
+  
+    .user-picture img {
+        height: 70px; /* Reducir el tamaño de la imagen del usuario */
+        width: 60px; /* Reducir el tamaño de la imagen del usuario */
+    }
+  
+    .skills {
+        margin-left: 20px; /* Reducir el margen izquierdo */
+        margin-right: 20px; /* Reducir el margen derecho */
+        padding-left: 20px; /* Reducir el padding izquierdo */
+        padding-right: 20px; /* Reducir el padding derecho */
+        width: auto; /* Hacer que el ancho sea automático */
+    }
+  
+      .nombre {
+          display: none; /* Oculta el nombre en dispositivos móviles para ahorrar espacio */
+      }
+  
+      nav ul {
+          margin-right: 0; /* Elimina el margen derecho en dispositivos móviles */
+      }
+  
+      nav ul li {
+          margin-right: 0px; /* Reducido el margen para ajustarse mejor */
+      }
+      .about-me {
+        
+        margin-bottom: 120px;
+        font-size: 20px;
+        flex-direction: column;
+    }
+  }
+  @media only screen and (max-width: 834px) {
+    .container {
+        max-width: 768px; /* Reducir el ancho del contenedor para adaptarse a la pantalla del iPad Air */
+    }
+    .skills {
+        width: 140px; /* Reducir el ancho de las habilidades para adaptarse mejor */
+        font-size: 14px; /* Reducir el tamaño del texto */
+    }
+    .aboutme-section h2 {
+      padding-top: 180px;
+      margin-bottom: 100px;
+      font-family: "Russo One", sans-serif;
+      font-size: 40px;
+      font-weight: 100;
+      padding-bottom: 25px;
+    }
+  }
+  
+  
+  
+  
+  
+  

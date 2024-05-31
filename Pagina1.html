@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio-CamiloTaba</title>
+    <link id="theme-style" rel="stylesheet" href="Portfoliocss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&family=Lilita+One&family=Playpen+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Russo+One&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--Esto es una cabecera que te lleva a cada parte del Mapa web-->
+<header class="sticky-header">
+    <div class="logo-section">
+        <img src="Imagenes/Fotoptf.jpg" alt="Tu foto"> <span class="nombre">Camilo Taba</span>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+                <div class="btn-container">
+                    <svg viewBox="0 0 16 16" class="bi bi-sun-fill" fill="currentColor" width="23" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" color="red"></path>
+                    </svg>
+                    <label class="switch btn-color-mode-switch">
+                        <input value="1" id="theme-toggle" name="color_mode" type="checkbox">
+                        <label class="btn-color-mode-switch-inner" data-off="Light" data-on="Dark" for="theme-toggle"></label>
+                    </label>
+                    <svg viewBox="0 0 16 16" class="bi bi-moon-stars-fill" fill="currentColor" width="23" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" color="orange"></path>
+                        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" color="black"></path>
+                    </svg>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="HOME" id="home">
+        <!-- Sección home -->
+        
+        <div class="HOME-section">
+            <div class="HOME-text">
+                <h1>HELLO , I'M CAMILO TABA</h1>
+                <p>I'm a recent graduate in web development with a strong passion for creating innovative and user-friendly web solutions. Eager to gain hands-on experience in the industry, I am dedicated to continually expanding my skills and knowledge.</p>
+            </div>
+            
+            <div class="card-client">
+                <div class="user-picture">
+                    <img src="Imagenes/Fotoptf.jpg" alt="imagen de un joven sonriendo">
+                </div>
+                <p class="name-client"> Camilo Taba
+                    <span>Web developer
+                    </span>
+                </p>
+                  <!-- Enlaces a redes sociales -->
+                  <div class="social-media">
+                    <!-- Icono de Instagram -->
+                    <a href="https://www.instagram.com/camiiilotaba/">
+                        <!-- SVG del icono -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8z"></path>
+                        </svg>
+                        <span class="tooltip-social">Instagram</span>
+                    </a>
+                     <!-- Icono de Github -->
+                     <a href="https://github.com/Camiiilotaba">
+                        <!-- SVG del icono -->
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        <span class="tooltip-social">Github</span>
+                    </a>
+                        <!-- Icono de LinkedIn -->
+                    <a href="https://www.linkedin.com/in/julian-camilo-blandon-taba-9b5210294/">
+                        <!-- SVG del icono -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
+                        </svg>
+                        <span class="tooltip-social">LinkedIn</span>
+                    </a>
+                  
+                </div>
+            </div>
+            
+          
+            <div class="HOME-TEXT2">
+                <h2> MORE INFO</h2>
+                 <!-- Botones para ver el curriculum y contactar -->
+                <a href="CV.pdf" target="_blank"><button class="botoncurriculum"> View Curriculum </button></a>
+                <a href="CertAcademico.pdf" target="_blank"><button class="botoncurriculum"> View certificate </button></a>
+                <a href="#contact"><button class="botoncurriculum"> Contact </button></a>
+              
+            </div>
+
+            
+           
+        </div>
+       
+    </section>
+    <section class="aboutme-section" id="about">
+        <div class="container">
+            <!-- Título de la sección -->
+            <h2>About Me</h2>
+            <div class="about-me">
+                <!-- Lado izquierdo: información sobre mi -->
+                <div class="about-me-info">
+                    <h3>Who Am I?</h3>
+                    <p>I'm a Frontend Web Developer building the Front-end of Websites and Web Applications that leads to the success of the overall product. Check out some of my work in the <a href="#projects">Projects</a> section.</p>
+                    <p>I also like sharing content related to the stuff that I have learned over the years in Web Development so it can help other people of the Dev Community. Feel free to <a href="https://www.linkedin.com/in/julian-camilo-blandon-taba-9b5210294/" target="_blank">Connect or Follow me on my Linkedin</a> where I post useful content related to Web Development and Programming.</p>
+                    <p>I'm open to Job opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to <a href="#contact">contact me</a>.</p>
+                </div>
+                <!-- Lado derecho: habilidades -->
+                <div class="skills">
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>GIT</li>
+                        <li>CSS</li>
+                        <li>Github</li>
+                        <li>JavaScript</li>
+                        <li>Responsive Design</li>
+                        <li>SQL Basics</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- Sección de proyectos -->
+    <section class="projects-section" id="projects">
+        <div class="container">
+            <!-- Título de la sección -->    
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="project-column">
+                    <!-- Card 1 -->
+                    <div class="project-card">
+                        <a href="https://tabacaneriia.000webhostapp.com/index.html" target="_blank"><img src="Imagenes/Tabacaneria-removebg-preview.png" alt="Imagen de Tabacaneria"></a>
+                       <p>
+                        This was my first website that has its own domain, it was a page where I started using html and css with my short training in web development.</p>
+                    </div>
+                </div>
+                <div class="project-column">
+                    <!-- Card 2 -->
+                    <div class="project-card">
+                        <a href="https://github.com/Camiiilotaba/JavaProject/tree/main" target="_blank"><img src="Imagenes/java.png" alt="Logo de Java"></a>
+                       <p> This has been my first project using java, this code request you to enter a day of the week and responds by saying if it is a weekday or a weekend.</p>
+                    </div>
+                </div>
+                <div class="project-column">
+                    <!-- Card 3 -->
+                    <div class="project-card">
+                        <a href="https://github.com/Camiiilotaba/TiendaED.git" target="_blank"><img src="Imagenes/Github.png" alt="Logo Github"></a>
+                       <p> This was my first project using version control with Git and saving it to a remote Github repository which is made in Java.</p>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+      <!-- Sección de contacto -->
+      <section class="contact-section" id="contact">
+        <div class="container">
+            <form class="form" id="contactForm">
+                <div class="title">Contact me</div>
+                <input type="text" name="email" placeholder="Your email" class="input" required>
+                <textarea name="message" placeholder="Your message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="responseMessage"></div>
+        </div>
+    </section>
+    
+    
+    
+</main>
+<footer class="footer" style="background-color: rgba(159, 164, 169, 1) 100%;">
+    <div class="footer-content">
+        <a href="#" class="footer-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="footer-icon">
+                <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8z"></path>
+            </svg>
+            <span class="tooltip-social">Instagram</span>
+        </a>
+        <a href="https://github.com/Camiiilotaba" class="footer-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="footer-icon">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            <span class="tooltip-social">Github</span>
+        </a>
+        <a href="https://www.linkedin.com/in/julian-camilo-blandon-taba-9b5210294/" class="footer-link">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="footer-icon">
+                <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
+            </svg>
+            <span class="tooltip-social">LinkedIn</span>
+        </a>
+    </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
