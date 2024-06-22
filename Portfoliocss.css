@@ -186,8 +186,9 @@ nav ul li a {
 
 /* Estilos para la sección HOME */
 .HOME {
-  background-image: url(Imagenes/polygon-scatter-haikei.png);
-  height: 100vh;
+  background: linear-gradient(180deg, rgba(159,164,169,1) 0%, rgba(140,134,145,1) 100%);
+
+  height: 80vh;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -243,7 +244,6 @@ nav ul li a {
 /* Estilos para la sección "Acerca de mí" */
 .aboutme-section {
   background-color: #000000;
-  padding: 20px;
 }
 
 /* Estilos para las tarjetas de clientes */
@@ -251,11 +251,11 @@ nav ul li a {
   margin-left: 100px;
   margin-top: 60px;
   background: #56494C;
-  width: 13rem;
-  padding-top: 30px;
-  padding-bottom: 25px;
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 14rem;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
   border: 4px solid #ffffff;
   box-shadow: 0 6px 10px rgba(207, 212, 222, 1);
   border-radius: 10px;
@@ -416,8 +416,7 @@ button.botoncurriculum:active {
 }
 
 .aboutme-section h2 {
-    padding-top: 40px ;
-    margin-bottom: 100px; /* Espacio entre el título y el contenido */
+    margin-bottom: 50px; /* Espacio entre el título y el contenido */
     font-family: "Russo One", sans-serif;
     font-size: 40px;
     font-weight: 100;
@@ -472,9 +471,21 @@ div .about-me-info{
     color: #56494C;
     padding: 5px;
     border-radius: 5px;
-    font-size: 18px; /* Tamaño del texto */
-    margin-bottom: 10px; /* Espacio entre elementos de la lista */
-  }
+    font-size: 18px;
+    margin-bottom: 15px;
+    transition: background-color 0.3s, color 0.3s; /* Transiciones suaves */
+}
+
+.skills li:hover {
+    background-color: #56494C;
+    color: #fff; /* Cambiar color al pasar el ratón */
+}
+
+.skills li.active {
+    background-color: #82b1ff; /* Color de fondo al hacer clic */
+    color: #fff; /* Color de texto al hacer clic */
+}
+
   .about-me-info h3,
   .skills h3 {
       text-align: center;
@@ -527,13 +538,21 @@ div .about-me-info{
     
   }
   
-  .project-card {
-    background-color: #56494C;
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px; /* Ajusta el espacio entre las tarjetas */
-    box-shadow: 4px 7px 11px rgba(207, 212, 222, 1);
-  }
+  /* Estilos para la tarjeta de proyectos */
+.project-card {
+  background-color: #56494C;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 4px 7px 11px rgba(207, 212, 222, 1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px); /* Mueve la tarjeta hacia arriba al pasar el ratón */
+  box-shadow: 4px 10px 15px rgba(207, 212, 222, 1); /* Ajusta la sombra al pasar el ratón */
+}
+
   
   .project-card img {
     
@@ -558,15 +577,15 @@ div .about-me-info{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Ajusta la altura de la sección para ocupar toda la pantalla */
+    height: 30vh; /* Ajusta la altura de la sección para ocupar toda la pantalla */
    
   }
   
   .form {
-    width: 300px;
+    width: 310px;
     background-color: white;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 40px;
+    border-radius: 15px;
     box-shadow: 0 30px 30px -30px rgba(27, 26, 26, 0.315);
   }
   
@@ -778,6 +797,7 @@ div .about-me-info{
     font-size: 40px;
     font-weight: 100;
     padding-bottom: 25px;
+    
   }
 }
 

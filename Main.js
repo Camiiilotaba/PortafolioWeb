@@ -8,22 +8,25 @@ document.getElementById('theme-toggle').addEventListener('click', function() {
     }
 });
 
-// Función para validar el formulario
+// Función para validar el formulario y mostrar alerta al enviar
 document.querySelector('.form').addEventListener('submit', function(e) {
     const email = document.querySelector('input[name="email"]').value;
     const message = document.querySelector('textarea[name="message"]').value;
     
     if (!validateEmail(email)) {
-        alert('Please enter a valid email address.');
+        alert('Por favor, introduce una dirección de correo electrónico válida.');
         e.preventDefault();
         return;
     }
     
     if (message.trim() === '') {
-        alert('Please enter your message.');
+        alert('Por favor, introduce tu mensaje.');
         e.preventDefault();
         return;
     }
+
+    // Mostrar un alert al enviar el formulario
+    alert('Mensaje enviado. ¡Gracias por contactarme!');
 });
 
 function validateEmail(email) {
@@ -38,6 +41,20 @@ document.querySelectorAll('nav a').forEach(anchor => {
         const targetId = this.getAttribute('href').substring(1);
         document.getElementById(targetId).scrollIntoView({
             behavior: 'smooth'
+        });
+    });
+});
+
+// Hacer interactiva la lista de habilidades
+document.addEventListener('DOMContentLoaded', function() {
+    const skillItems = document.querySelectorAll('.skills li');
+    
+    skillItems.forEach(function(item) {
+        item.addEventListener('click', function() {
+            skillItems.forEach(function(el) {
+                el.classList.remove('active');
+            });
+            item.classList.add('active');
         });
     });
 });
